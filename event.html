@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./event.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="left-section">
+                <img src="./iconsend/Link - Meetup logo.png" alt="">
+                <div class="allfather">
+                    <input type="text" placeholder="Search events" class="leftInp">
+                <input value="Mountain View, CA" type="text" class="rightInp">
+                <button class="allbtn"><img src="./iconsend/lupastart/lupastart.png" alt=""></button>
+                </div>
+            </div>
+            <div class="auth-buttons">
+                <img src="./iconsend/Planet.png" alt="">
+                <button>English</button>
+                <button>Log in</button>
+                <button class="signup-btn">Sign up</button>
+            </div>
+        </div>
+    </header>
+
+
+
+   <div class="mainCont">
+    <section class="prefilter">
+        <h2>Event near New York, NY</h2>
+        <div>
+            <p>Finds events near</p>
+            <h3>New York, NY</h3>
+        </div>
+    </section>
+
+
+    <h1>Event Filtering</h1>
+    <div class="filters">
+        <div class="dropdown">
+            <button class="filteF">
+                Category
+                <img src="./iconsend/arrowMenu.png" alt="" style="vertical-align: middle;">
+            </button>
+            <div class="dropdown-content">
+                <button onclick="setFilter('category', 'Social Activities')">Social Activities</button>
+                <button onclick="setFilter('category', 'Hobbies and Passions')">Hobbies and Passions</button>
+                <button onclick="setFilter('category', 'Health and Wellbeing')">Health and Wellbeing</button>
+                <button onclick="setFilter('category', 'Business')">Business</button>
+                <button onclick="setFilter('category', 'Technology')">Technology</button>
+                <button onclick="setFilter('category', 'all')">All</button>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="filteF">
+                Type
+                <img src="./iconsend/arrowMenu.png" alt="" style="vertical-align: middle;">
+            </button>
+            <div class="dropdown-content">
+                <button onclick="setFilter('type', 'online')">Online</button>
+                <button onclick="setFilter('type', 'offline')">Offline</button>
+                <button onclick="setFilter('type', 'all')">All</button>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="filteF">
+                Distance
+                <img src="./iconsend/arrowMenu.png" alt="" style="vertical-align: middle;">
+            </button>
+            <div class="dropdown-content">
+                <button onclick="setFilter('distance', 5)">5 km</button>
+                <button onclick="setFilter('distance', 10)">10 km</button>
+                <button onclick="setFilter('distance', 15)">15 km</button>
+                <button onclick="setFilter('distance', 25)">25 km</button>
+                <button onclick="setFilter('distance', 50)">50 km</button>
+                <button onclick="setFilter('distance', 75)">75 km</button>
+                <button onclick="setFilter('distance', 100)">100 km</button>
+                <button onclick="setFilter('distance', 'all')">All</button>
+            </div>
+        </div>
+    </div>
+    <div id="eventList"></div>
+   </div>
+
+
+    <section class="footer-section">
+        <div class="footer-top">
+          <h3>Create your own Meetup group.</h3>
+          <button class="btn-get-started">Get Started</button>
+        </div>
+        <div class="footer-content">
+          <div class="footer-column">
+            <h4>Your Account</h4>
+            <ul>
+              <li><a href="#">Sign up</a></li>
+              <li><a href="#">Log in</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Become an Affiliate</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Discover</h4>
+            <ul>
+              <li><a href="#">Groups</a></li>
+              <li><a href="#">Calendar</a></li>
+              <li><a href="#">Topics</a></li>
+              <li><a href="#">Cities</a></li>
+              <li><a href="#">Online Events</a></li>
+              <li><a href="#">Local Guides</a></li>
+              <li><a href="#">Make Friends</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Meetup</h4>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Meetup Pro</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Apps</a></li>
+              <li><a href="#">Podcast</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-social">
+          <p>Follow us</p>
+          <div class="social-icons">
+            <a href="#"><img src="./iconsend/Link - Meetup on Facebook → SVG.png" alt="Facebook" /></a>
+            <a href="#"><img src="./iconsend/Link - Meetup on Twitter → SVG.png" alt="Twitter" /></a>
+            <a href="#"><img src="./iconsend/Link - Meetup on YouTube → SVG.png" alt="YouTube" /></a>
+            <a href="#"><img src="./iconsend/Link - Instagram → SVG.png" alt="Instagram" /></a>
+            <a href="#"><img src="./iconsend/Link - TikTok → SVG.png" alt="TikTok" /></a>
+          </div>
+          <div class="app-buttons">
+            <a href="#"><img src="./iconsend/Link - Download app from Google Play → download_en-US.svg.png" alt="Google Play" /></a>
+            <a href="#"><img src="./iconsend/Link - Download app from Google Play → download_en-US.svg.png" alt="App Store" /></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2024 Meetup</p>
+          <ul class="footer-policy">
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Do Not Sell or Share My Personal Data</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </div>
+      </section>
+    <script src="./script1.js"></script>
+</body>
+</html>
